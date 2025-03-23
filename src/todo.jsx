@@ -12,9 +12,43 @@
 //         return <li>Do now: {task}</li>
 //     }
 // }
-export default function ToDo({task, isDone, time =0}){
+// export default function ToDo({task, isDone, time =0}){
+//     if(isDone===true){
+//         return <li>Done: {task} time: {time}</li>
+//     }
+//     return <li>to be done: {task}</li>
+// }
+
+
+//*conditional rendering: 3*//  trnry
+
+// ** condition ? true:false//
+
+// export default function ToDo({task, isDone, time =0}){
+// return isDone ? <li>Done:{task} time: {time} </li> : <li>To be done {task}</li> 
+// }
+
+
+
+// ** conditional rendering : 4  &&//
+
+// export default function ToDo({task, isDone, time = 0}){
+//     return isDone && <li>done: {task} time:{time}</li>
+// }
+
+
+// ** conditional rendering : 4  ||  .....
+
+// export default function ToDo({task, isDone, time = 0}){
+//     return isDone || <li> not done task: {task} time:{time}</li>
+// }
+
+// ** conditional rendering : 6 use variable
+export default function ToDo({task, isDone, time}){
     if(isDone===true){
-        return <li>Done: {task} time: {time}</li>
+        return null
     }
-    return <li>to be done: {task}</li>
+    else{
+        return <li>pending: {task} time: {time}</li>
+    }
 }
