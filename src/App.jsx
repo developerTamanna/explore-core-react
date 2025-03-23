@@ -1,13 +1,22 @@
 
 import './App.css'
-import ToDo from './todo';
+// import ToDo from './todo';
+import Teacher from './teacher';
 function App() {
-  const time = 50
+  // const time = 50
+   const teachers = ['sathi', 'lima', 'ruba']
   return (
     <> 
       <h1>React core concept</h1>
 
-      <ToDo task ="learn react" isDone={true} time={time}>
+
+   
+     {
+      teachers.map((teacher, index) => <Teacher key = {index} teacher={teacher}></Teacher>)
+     }
+
+
+      {/* <ToDo task ="learn react" isDone={true} time={time}>
         
       </ToDo>
       <ToDo task ="revise js" isDone={false}>
@@ -15,7 +24,7 @@ function App() {
       </ToDo>
       <ToDo task ="Take a shower" isDone={true} time={100}>
         
-      </ToDo>
+      </ToDo> */}
 
     {/* <Student></Student>
     <Student></Student>

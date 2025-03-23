@@ -52,14 +52,14 @@
 //         return <li>pending: {task} time: {time}</li>
 //     }
 // }
-export default function ToDo({task, isDone, time}){
-    let listItem ;
-    const displayTime = time ? time :100;
-    if(isDone===true){
-        listItem = <li>Done: {task}</li>
-    }
-    else{
-        listItem = <li>pending: {task} time: {displayTime}</li>
-    }
-    return listItem
-}
+// export default function ToDo({task, isDone, time}){
+//     let listItem ;
+//     const displayTime = time ? time :100;
+//     if(isDone===true){
+//         listItem = <li>Done: {task}</li>
+//     }
+//     else{
+//         listItem = <li>pending: {task} time: {displayTime}</li>
+//     }
+//     return listItem
+// }
