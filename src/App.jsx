@@ -23,10 +23,60 @@ function App() {
     <Device name="readmy" price="90000" color="green" brand="readmy">
       
        </Device>
+
+       <Player name="Shakib" runs="4000" country="Bangladesh">
+
+       </Player>
+       <Player name="Mussi" runs="5000" country="Bangladesh">
+
+       </Player>
+
+       <salami></salami>
     </>
 
   )
 }
+
+
+
+
+
+
+function salami(){
+  return(
+    <div className='student'>
+     <p>Salaami for:</p>
+     <p>amount:</p>
+    </div>
+  )
+}
+
+
+
+
+
+
+// const ply = {name: 'Shakib', runs: '4000'}
+
+function Player({name, runs, country}){
+  // console.log(ply)
+  return(
+    <div className='student'>
+         <h3>Name: {name}</h3>
+         <p>Runs: {runs}</p>
+         <p>Country: {country}</p>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
 
 
 function Developer(props){
