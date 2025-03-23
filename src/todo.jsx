@@ -44,11 +44,22 @@
 // }
 
 // ** conditional rendering : 6 use variable
+// export default function ToDo({task, isDone, time}){
+//     if(isDone===true){
+//         return null
+//     }
+//     else{
+//         return <li>pending: {task} time: {time}</li>
+//     }
+// }
 export default function ToDo({task, isDone, time}){
+    let listItem ;
+    const displayTime = time ? time :100;
     if(isDone===true){
-        return null
+        listItem = <li>Done: {task}</li>
     }
     else{
-        return <li>pending: {task} time: {time}</li>
+        listItem = <li>pending: {task} time: {displayTime}</li>
     }
+    return listItem
 }
